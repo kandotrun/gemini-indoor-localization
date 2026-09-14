@@ -25,6 +25,14 @@ The package uses only Node.js built-ins. There are no runtime dependencies.
 - Access to Gemini Embedding 2 through one of the authentication paths below
 - Reference media in JPEG, PNG, MP4, or MOV format
 
+Clone the repository and run the checks without installing runtime dependencies:
+
+```bash
+git clone https://github.com/kandotrun/gemini-indoor-localization.git
+cd gemini-indoor-localization
+npm test
+```
+
 ## Authentication
 
 Copy the environment template and choose one path:
@@ -143,7 +151,7 @@ import {
   evaluateLocationQueries,
   locateMedia,
   rankLocationCandidates,
-} from "gemini-indoor-localization";
+} from "./src/index.mjs";
 
 const embedder = createGeminiMediaEmbedder({
   apiKey: process.env.GEMINI_API_KEY,
@@ -161,6 +169,8 @@ const result = await locateMedia({
 
 console.log(result.status, result.candidates[0], result.estimate);
 ```
+
+When installed from npm, replace the relative import with `gemini-indoor-localization`.
 
 For applications that already have vectors, call `rankLocationCandidates(queryEmbedding, references, options)` directly. Each reference must contain an `embedding` array and the manifest location fields.
 
