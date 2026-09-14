@@ -170,7 +170,7 @@ const result = await locateMedia({
 console.log(result.status, result.candidates[0], result.estimate);
 ```
 
-When installed from npm, replace the relative import with `gemini-indoor-localization`.
+When this project is installed as a package, replace the relative import with `gemini-indoor-localization`.
 
 For applications that already have vectors, call `rankLocationCandidates(queryEmbedding, references, options)` directly. Each reference must contain an `embedding` array and the manifest location fields.
 
