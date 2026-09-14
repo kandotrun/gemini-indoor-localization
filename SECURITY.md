@@ -2,7 +2,7 @@
 
 ## Reporting a vulnerability
 
-Please do not open a public issue for a security vulnerability. Email the maintainer at `security@kandotrun.com` with a description, reproduction steps, and the affected commit or version.
+Please do not open a public issue for a security vulnerability. Use [GitHub's private vulnerability reporting](https://github.com/kandotrun/gemini-indoor-localization/security/advisories/new) with a description, reproduction steps, and the affected commit or version.
 
 You should receive an acknowledgement within seven days. Please avoid including API keys, private building media, embedding caches, or other sensitive data in the report.
 
