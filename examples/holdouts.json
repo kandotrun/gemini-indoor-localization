@@ -1,0 +1,17 @@
+[
+  {
+    "id": "holdout-001",
+    "file": "captures/lobby-001.jpg",
+    "expectedReferenceId": "lobby-entrance"
+  },
+  {
+    "id": "holdout-002",
+    "file": "captures/meeting-001.mp4",
+    "expectedReferenceId": "meeting-room"
+  },
+  {
+    "id": "unknown-001",
+    "file": "captures/outside.jpg",
+    "expectedReferenceId": null
+  }
+]

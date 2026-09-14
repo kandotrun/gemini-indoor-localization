@@ -1,0 +1,43 @@
+{
+  "name": "gemini-indoor-localization",
+  "version": "0.1.0",
+  "description": "Reference-based indoor visual localization with Gemini Embedding 2",
+  "type": "module",
+  "license": "MIT",
+  "author": "Kandotrun",
+  "keywords": [
+    "gemini",
+    "embedding",
+    "indoor-localization",
+    "computer-vision",
+    "multimodal"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kandotrun/gemini-indoor-localization.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kandotrun/gemini-indoor-localization/issues"
+  },
+  "homepage": "https://github.com/kandotrun/gemini-indoor-localization#readme",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "bin": {
+    "gemini-indoor-localize": "src/cli.mjs"
+  },
+  "main": "./src/index.mjs",
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "files": [
+    "src",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/location.test.mjs",
+    "check": "node --check src/constants.mjs && node --check src/errors.mjs && node --check src/cli-args.mjs && node --check src/manifest.mjs && node --check src/embedding.mjs && node --check src/matching.mjs && node --check src/evaluation.mjs && node --check src/index.mjs && node --check src/cli.mjs"
+  }
+}

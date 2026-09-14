@@ -1,0 +1,20 @@
+[
+  {
+    "id": "lobby-entrance",
+    "label": "Lobby entrance",
+    "file": "reference/lobby-entrance.jpg",
+    "location": { "floor": "1F", "x": 12.4, "y": 8.1 }
+  },
+  {
+    "id": "gallery",
+    "label": "Gallery",
+    "file": "reference/gallery.mp4",
+    "location": { "floor": "1F", "x": 28.0, "y": 8.5 }
+  },
+  {
+    "id": "meeting-room",
+    "label": "Meeting room",
+    "file": "reference/meeting-room.jpg",
+    "location": { "floor": "2F", "x": 41.0, "y": 22.0 }
+  }
+]
